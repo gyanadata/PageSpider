@@ -41,8 +41,8 @@ def scrape_page(page_contents: str):
         clean = True
 
         # no punctuation
-        for punctuation_mark in string.punctuation:
-            if punctuation_mark in word:
+        for punctuation_marks in string.punctuation:
+            if punctuation_marks in word:
                 clean = False
 
                 # no numbers
